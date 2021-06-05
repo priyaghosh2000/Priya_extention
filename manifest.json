@@ -1,0 +1,29 @@
+{
+    "background": {
+        "scripts": [ "js/lib/jquery.min.js", "public/tabResize_background.min.js" ]
+     },
+     "browser_action": {
+        "default_icon": "images/icons/merge_windows_128.png",
+        "default_popup": "index.html",
+        "default_title": "Tab Resize split screen layouts"
+     },
+    
+      "icons": {
+      "128": "images/icons/merge_windows_128.png",
+      "16": "images/icons/arrow_in.png",
+      "48": "images/icons/merge_windows_48.png"
+   },
+
+    "name": "Merge all windows",
+    "description": "Combines all Chrome tabs",
+    "version": "2.3.5",
+    "manifest_version": 2,
+    "minimum_chrome_version": "30",
+    "offline_enabled": true,
+    "options_page": "options.html",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "tabs", "system.display" ]
+  }
